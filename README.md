@@ -1,4 +1,4 @@
-# gpx
+# gpx [![Build Status](https://travis-ci.org/scaint/gpx.cr.svg?branch=master)](https://travis-ci.org/scaint/gpx.cr)
 
 GPX (the GPS Exchange Format) parser for Crystal
 
