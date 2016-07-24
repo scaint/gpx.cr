@@ -31,3 +31,9 @@ puts start_point.lon
 puts start_point.ele
 puts start_point.time
 ```
+
+## TODO
+
+- [ ] Bounds
+- [ ] Haversine distance
+- [ ] Track optimization
