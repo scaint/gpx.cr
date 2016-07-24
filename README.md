@@ -29,4 +29,5 @@ start_point = track.segments[0].points[0]
 puts start_point.lat
 puts start_point.lon
 puts start_point.ele
+puts start_point.time
 ```

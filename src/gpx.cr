@@ -2,6 +2,8 @@ require "./gpx/*"
 require "xml"
 
 module GPX
+  TIME_FORMAT = "%FT%T%:z"
+
   def self.from_file(filename : String)
     from_xml(File.read(filename))
   end
@@ -31,6 +33,9 @@ module GPX
           point = TrackPoint.new(lat.to_f64, lon.to_f64)
           ele = trkpt.xpath_string("string(ele)")
           point.ele = ele.to_f32 unless ele.empty?
+
+          time = trkpt.xpath_string("string(time)")
+          point.time = Time.parse(time, TIME_FORMAT) unless time.empty?
 
           segment.points << point
         end

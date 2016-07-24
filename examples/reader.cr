@@ -15,4 +15,5 @@ gpx.tracks.each_with_index do |track, i|
   puts "    lat #{start_point.lat}"
   puts "    lon #{start_point.lon}"
   puts "    ele #{start_point.ele}"
+  puts "    time #{start_point.time}"
 end

@@ -46,6 +46,11 @@ describe GPX do
             segment.points[0].ele.should eq 2376.5
             segment.points[1].ele.should eq nil
           end
+
+          it "should read point time" do
+            segment.points[0].time.should eq Time.new(2007, 10, 14, 10, 9, 57)
+            segment.points[1].time.should eq nil
+          end
         end
       end
     end
