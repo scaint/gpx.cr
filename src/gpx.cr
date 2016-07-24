@@ -28,7 +28,11 @@ module GPX
           raise "expected @lat attribute" unless lat
           raise "expected @lon attribute" unless lon
 
-          segment.points << TrackPoint.new(lat.to_f64, lon.to_f64)
+          point = TrackPoint.new(lat.to_f64, lon.to_f64)
+          ele = trkpt.xpath_string("string(ele)")
+          point.ele = ele.to_f32 unless ele.empty?
+
+          segment.points << point
         end
 
         track.segments << segment

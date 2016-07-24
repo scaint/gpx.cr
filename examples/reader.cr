@@ -11,5 +11,8 @@ gpx.tracks.each_with_index do |track, i|
   puts "Track ##{i}"
   puts "  Name: #{track.name}"
   start_point = track.segments[0].points[0]
-  puts "  Start point: lat #{start_point.lat}, lon #{start_point.lon}"
+  puts "  Start point:"
+  puts "    lat #{start_point.lat}"
+  puts "    lon #{start_point.lon}"
+  puts "    ele #{start_point.ele}"
 end

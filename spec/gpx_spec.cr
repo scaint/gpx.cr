@@ -41,6 +41,11 @@ describe GPX do
             point.lat.should eq 46.57608333
             point.lon.should eq 8.89241667
           end
+
+          it "should read point elevation" do
+            segment.points[0].ele.should eq 2376.5
+            segment.points[1].ele.should eq nil
+          end
         end
       end
     end
