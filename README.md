@@ -1,4 +1,4 @@
-# gpx [![Build Status](https://travis-ci.org/scaint/gpx.cr.svg?branch=master)](https://travis-ci.org/scaint/gpx.cr) [![docrystal.org](http://docrystal.org/badge.svg?style=round)](http://docrystal.org/github.com/scaint/gpx.cr)
+# gpx [![Build Status](https://travis-ci.org/scaint/gpx.cr.svg?branch=master)](https://travis-ci.org/scaint/gpx.cr) [![crystal-docs.org](https://crystal-docs.org/badge.svg)](https://crystal-docs.org/scaint/gpx.cr)
 
 GPX (the GPS Exchange Format) parser for Crystal
 
